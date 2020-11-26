@@ -1,0 +1,7 @@
+[Wed, 25 Nov 2020 08:49:16 +0700] [localhost] [::1] [Notice(8): Undefined index: symbol] [FILE: /modules/shops/site.functions.php] [LINE: 186]
+[Wed, 25 Nov 2020 10:14:45 +0700] [localhost] [::1] [Run-time notices(8192): The each() function is deprecated. This message will be suppressed on further calls] [FILE: /modules/shops/admin/items.php] [LINE: 388]
+[Wed, 25 Nov 2020 10:37:01 +0700] [localhost] [::1] [Warning(2): rename(C:/xampp/htdocs/shoplaptop/data/tmp/61c04ff89a8c8544044a8c3e9a26cd7a/modules/home/funcs/.htaccess,C:/xampp/htdocs/shoplaptop/modules/home/funcs/.htaccess): The system cannot find the file specified. (code: 2)] [FILE: /admin/extensions/upload.php] [LINE: 274]
+[Wed, 25 Nov 2020 11:01:49 +0700] [localhost] [::1] [Notice(8): Undefined variable: block_config] [FILE: /modules/shops/blocks/module.block_filter_product.php] [LINE: 172]
+[Wed, 25 Nov 2020 11:01:49 +0700] [localhost] [::1] [Notice(8): Undefined index: template] [FILE: /modules/shops/blocks/module.block_filter_product.php] [LINE: 79]
+[Wed, 25 Nov 2020 11:01:49 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/shoplaptop/themes//modules/shops\block.filter_product.tpl): failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1395]
+[Wed, 25 Nov 2020 11:01:49 +0700] [localhost] [::1] [Warning(2): Invalid argument supplied for foreach()] [FILE: /modules/shops/blocks/module.block_filter_product.php] [LINE: 83]

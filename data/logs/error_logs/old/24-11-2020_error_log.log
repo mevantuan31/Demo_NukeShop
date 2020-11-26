@@ -1,0 +1,17 @@
+[Tue, 24 Nov 2020 14:51:04 +0700] [localhost] [::1] [Run-time notices(8192): The each() function is deprecated. This message will be suppressed on further calls] [FILE: /modules/shops/admin/items.php] [LINE: 388]
+[Tue, 24 Nov 2020 14:51:24 +0700] [localhost] [::1] [Notice(8): Undefined index: symbol] [FILE: /modules/shops/site.functions.php] [LINE: 186]
+[Tue, 24 Nov 2020 14:56:44 +0700] [localhost] [::1] [Notice(8): Undefined variable: block_config] [FILE: /modules/shops/blocks/module.block_filter_product.php] [LINE: 172]
+[Tue, 24 Nov 2020 14:56:44 +0700] [localhost] [::1] [Notice(8): Undefined index: template] [FILE: /modules/shops/blocks/module.block_filter_product.php] [LINE: 79]
+[Tue, 24 Nov 2020 14:56:44 +0700] [localhost] [::1] [Warning(2): file_get_contents(C:/xampp/htdocs/shoplaptop/themes//modules/shops\block.filter_product.tpl): failed to open stream: No such file or directory] [FILE: /includes/xtemplate.class.php] [LINE: 1395]
+[Tue, 24 Nov 2020 14:56:44 +0700] [localhost] [::1] [Warning(2): Invalid argument supplied for foreach()] [FILE: /modules/shops/blocks/module.block_filter_product.php] [LINE: 83]
+[Tue, 24 Nov 2020 14:57:35 +0700] [localhost] [::1] [Warning(2): rename(C:/xampp/htdocs/shoplaptop/data/tmp/931ee8563ff1b8b85b2161c44a9b42a8/modules/shops/admin/.htaccess,C:/xampp/htdocs/shoplaptop/modules/shops/admin/.htaccess): The system cannot find the file specified. (code: 2)] [FILE: /admin/extensions/upload.php] [LINE: 274]
+[Tue, 24 Nov 2020 15:03:50 +0700] [localhost] [::1] [Error(1): Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shoplaptop.nv4_vi_shops_rows' doesn't exist in C:\xampp\htdocs\shoplaptop\vendor\vinades\nukeviet\Core\Database.php:495
+Stack trace:
+#0 C:\xampp\htdocs\shoplaptop\vendor\vinades\nukeviet\Core\Database.php(495): PDO->query('SELECT id, cati...')
+#1 C:\xampp\htdocs\shoplaptop\vendor\vinades\nukeviet\Cache\Files.php(228): NukeViet\Core\Database->query('SELECT id, cati...')
+#2 C:\xampp\htdocs\shoplaptop\modules\news\blocks\module.block_newscenter.php(179): NukeViet\Cache\Files->db('SELECT id, cati...', 'id', 'news')
+#3 C:\xampp\htdocs\shoplaptop\modules\news\blocks\module.block_newscenter.php(274): nv_news_block_newscenter(Array)
+#4 C:\xampp\htdocs\shoplaptop\includes\core\user_functions.php(184): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\shoplaptop\themes\demoshop\theme.php(340): nv_blocks_content('\r\n<!DOCTYPE htm...')
+#6 C:\xampp\htdocs\shoplaptop\modules\news\funcs\main.php(339): nv_site_theme('\r\n\r\n<div class=...')
+] [FILE: /vendor/vinades/nukeviet/Core/Database.php] [LINE: 495]
