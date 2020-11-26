@@ -13,3 +13,10 @@ if (!defined('NV_ADMIN')) {
 }
 
 $submenu['config'] = $lang_module['config'];
+$submenu['list'] = $lang_module['list'];
+$submenu['crud_cate'] = $lang_module['crud_cate'];
+$submenu['list_product'] = $lang_module['list_product'];
+$submenu['crud_product'] = $lang_module['crud_product'];
+$submenu['order'] = $lang_module['order'];
+
+

@@ -21,20 +21,16 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c4b2056-cdc8-4371-8fff-d3e2279bf285" name="Default Changelist" comment="tao csdl">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="1c4b2056-cdc8-4371-8fff-d3e2279bf285" name="Default Changelist" comment="hiển thị dữ liệu cũ khi bấm sửa danh mục">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTE/change.txt" beforeDir="false" afterPath="$PROJECT_DIR$/NOTE/change.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/modules/vi_sitemods_c853da9a0a9cc411a9eb5ebe2a7b954f.cache" beforeDir="false" afterPath="$PROJECT_DIR$/data/cache/modules/vi_sitemods_c853da9a0a9cc411a9eb5ebe2a7b954f.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/config_global.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/config_global.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/config_ini.localhost.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/config_ini.localhost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/category/admin/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/category/admin/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/admin_default/modules/category/main.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/admin_default/modules/category/main.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/category/admin/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/modules/category/admin/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/admin_default/modules/category/crud_cate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/admin_default/modules/category/crud_cate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/admin_default/modules/category/order.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/themes/admin_default/modules/category/order.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +44,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="1ab6c696-343e-4423-879b-64de4dd3b31f" />
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -79,13 +75,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nukeviet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shoplaptop\modules\category\admin" />
+      <recent name="C:\xampp\htdocs\shoplaptop\themes\admin_default\modules\category" />
       <recent name="C:\xampp\htdocs\shoplaptop" />
     </key>
   </component>
@@ -101,7 +99,17 @@
       <workItem from="1605668984481" duration="2586000" />
       <workItem from="1605671613786" duration="90000" />
       <workItem from="1605836317493" duration="1639000" />
-      <workItem from="1605855512593" duration="1130000" />
+      <workItem from="1605855512593" duration="2032000" />
+      <workItem from="1605858273184" duration="61000" />
+      <workItem from="1605858482578" duration="697000" />
+      <workItem from="1605923420895" duration="3042000" />
+      <workItem from="1605932594353" duration="63000" />
+      <workItem from="1605932713426" duration="101000" />
+      <workItem from="1605932824537" duration="369000" />
+      <workItem from="1606013141564" duration="48000" />
+      <workItem from="1606055156700" duration="14000" />
+      <workItem from="1606095502410" duration="165000" />
+      <workItem from="1606181555300" duration="25546000" />
     </task>
     <task id="LOCAL-00001" summary="tạo file .gitignore">
       <created>1605670749561</created>
@@ -117,8 +125,132 @@
       <option name="project" value="LOCAL" />
       <updated>1605670887722</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
-    <servers />
+    <task id="LOCAL-00003" summary="sửa + xoá danh mục sản phẩm">
+      <created>1606187235485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606187235485</updated>
+    </task>
+    <task id="LOCAL-00004" summary="đổi tên + di chuyển main sang crud_cate">
+      <created>1606188294736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606188294736</updated>
+    </task>
+    <task id="LOCAL-00005" summary="thêm updated_at + created_at">
+      <created>1606188907312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606188907312</updated>
+    </task>
+    <task id="LOCAL-00006" summary="thêm đổi kiểu + tên trong bảng nv4_products">
+      <created>1606189796066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606189796066</updated>
+    </task>
+    <task id="LOCAL-00007" summary="thêm weight cho bảng product">
+      <created>1606193679459</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606193679459</updated>
+    </task>
+    <task id="LOCAL-00008" summary="thêm sản phẩm">
+      <created>1606193708305</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606193708305</updated>
+    </task>
+    <task id="LOCAL-00009" summary="show list sản phẩm">
+      <created>1606200853531</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606200853531</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sắp xếp weight">
+      <created>1606201779153</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606201779153</updated>
+    </task>
+    <task id="LOCAL-00011" summary="hiển thị trạng thái hàng hoá">
+      <created>1606202142491</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606202142491</updated>
+    </task>
+    <task id="LOCAL-00012" summary="hiển thị dữ liệu cũ khi bấm sửa danh mục">
+      <created>1606203015595</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606203015595</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sửa nhẹ">
+      <created>1606203551781</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606203551781</updated>
+    </task>
+    <task id="LOCAL-00014" summary="hiển thị dữ liệu cũ khi bấm sửa">
+      <created>1606203567226</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606203567226</updated>
+    </task>
+    <task id="LOCAL-00015" summary="hiện thị danh mục sản phẩm">
+      <created>1606205076151</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606205076151</updated>
+    </task>
+    <task id="LOCAL-00016" summary="thêm mục order">
+      <created>1606205126319</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606205126319</updated>
+    </task>
+    <task id="LOCAL-00017" summary="đổi tên bảng order và orderdetail">
+      <created>1606206637584</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606206637584</updated>
+    </task>
+    <task id="LOCAL-00018" summary="đổi tên bảng order và orderdetail">
+      <created>1606206677226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606206677226</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Thêm crud_order">
+      <created>1606212126555</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606212126555</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers>
+      <GitHub url="https://github.com">
+        <option name="repoAuthor" value="nctoon2308" />
+        <option name="repoName" value="Demo_NukeShop" />
+      </GitHub>
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -134,7 +266,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="origin/develop" />
                       </list>
                     </value>
                   </entry>
@@ -151,28 +283,68 @@
     <MESSAGE value="tạo file .gitignore" />
     <MESSAGE value="note cdsl" />
     <MESSAGE value="tao csdl" />
-    <option name="LAST_COMMIT_MESSAGE" value="tao csdl" />
+    <MESSAGE value="sửa + xoá danh mục sản phẩm" />
+    <MESSAGE value="đổi tên + di chuyển main sang crud_cate" />
+    <MESSAGE value="thêm updated_at + created_at" />
+    <MESSAGE value="thêm đổi kiểu + tên trong bảng nv4_products" />
+    <MESSAGE value="thêm weight cho bảng product" />
+    <MESSAGE value="thêm sản phẩm" />
+    <MESSAGE value="show list sản phẩm" />
+    <MESSAGE value="sắp xếp weight" />
+    <MESSAGE value="hiển thị trạng thái hàng hoá" />
+    <MESSAGE value="hiển thị dữ liệu cũ khi bấm sửa danh mục" />
+    <MESSAGE value="sửa nhẹ" />
+    <MESSAGE value="hiển thị dữ liệu cũ khi bấm sửa" />
+    <MESSAGE value="hiện thị danh mục sản phẩm" />
+    <MESSAGE value="thêm mục order" />
+    <MESSAGE value="đổi tên bảng order và orderdetail" />
+    <MESSAGE value="Thêm crud_order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thêm crud_order" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="741" y="273" key="#HTTP_Proxy" timestamp="1606205248676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="741" y="273" key="#HTTP_Proxy/0.0.1920.1040@0.0.1920.1040" timestamp="1606205248676" />
+    <state x="752" y="381" key="#Scopes" timestamp="1606187612565">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="381" key="#Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1606187612565" />
     <state x="718" y="329" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605670679808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="718" y="329" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605670679808" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1605836820216">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1606211883778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605836820216" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606211883778" />
     <state x="837" y="422" key="Github.ShareDialog" timestamp="1605668728026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="422" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605668728026" />
-    <state x="463" y="166" key="SettingsEditor" timestamp="1605671703992">
+    <state x="463" y="166" key="SettingsEditor" timestamp="1606205437543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605671703992" />
+    <state x="463" y="166" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606205437543" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1606212203624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606212203624" />
     <state x="781" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605671220110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="781" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605671220110" />
+    <state x="669" y="271" width="581" height="498" key="find.popup" timestamp="1605857351779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="271" width="581" height="498" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605857351779" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1606205011284">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606205011284" />
+    <state x="784" y="300" key="zielu.gittoolbox.ui.GitPushTagsDialog" timestamp="1605932638870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="300" key="zielu.gittoolbox.ui.GitPushTagsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605932638870" />
   </component>
 </project>
