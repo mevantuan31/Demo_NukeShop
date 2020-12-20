@@ -1,26 +1,26 @@
 <!-- BEGIN: main -->
 
-<div class="table-responsive">
-    <table class="table table-striped table-bordered table-hover">
-        <tbody>
+<div class="row">
         <!-- BEGIN: loop -->
-        <tr class="text-center" category_id="20">
-            <th class=""><a href="">{ROW.product_name}</th>
-            <td class="">{ROW.category_id}</td>
-            <td class="">{ROW.product_status}</td>
-
-            <td class="">
-                <img src="{ROW.product_image}" width="100px" height="100px">
-            </td>
-            <td class="">{ROW.product_desc}</td>
-            <td class="">{ROW.product_quantity}</td>
-            <td class="">{ROW.product_price}</td>
-        </tr>
+            <div class="col-3">
+            <a href="main.tpl.html" id="id">
+            <img src="{ROW.product_image}" width="200px" height="200px"/>
+            <h4>{ROW.product_name}</h4>
+            <p>{ROW.product_price}</p>
+            </a>
+            </div>
         <!-- END: loop -->
-        </tbody>
-    </table>
-    <!-- BEGIN: GENERATE_PAGE -->
-    {GENERATE_PAGE}
-    <!-- END: GENERATE_PAGE -->
+      <script src="index.js"></script>
+      <script src="products.js"></script>
+      <script type="text/javascript">
+        $(window).on('scroll', function() {
+          if ($(window).scrollTop()) {
+            $('nav').addClass('black');
+          } else {
+            $('nav').removeClass('black');
+          }
+        });
+      </script>
 </div>
 <!-- END: main -->
+

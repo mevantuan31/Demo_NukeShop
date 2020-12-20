@@ -44,7 +44,7 @@
                     <!-- END: weight -->
                 </select>
             </td>
-            <td class=""><a href="">{ROW.product_name}</td>
+            <td class="">{ROW.product_name}</td>
             <td class="">{ROW.category_id}</td>
             <td class="">{ROW.product_status}</td>
 
