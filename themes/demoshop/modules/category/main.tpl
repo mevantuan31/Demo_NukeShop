@@ -1,8 +1,10 @@
 <!-- BEGIN: main -->
 
 
-<div class="col-xs-5 col-sm-5 col-md-5 ">
+<div class="col-xs-24 col-sm-24 col-md-24 ">
 <div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading text-center"><h1> <i class="fa fa-briefcase"></i> - {LANG.category_id}</h1></div>
     <!-- BEGIN: cate -->
     <table class="table">
 		<td>
@@ -17,14 +19,11 @@
 </div>
 
 
+
     <!-- BEGIN: loop -->
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 <div class="panel panel-default"  >
-    <div class="thumbnail">
-    	<div class="panel-body" style="height:50px" >
-    		<h3 class="name">{ROW.product_name}</h3>
-    	</div>
-	</div>
+    
 	
 	<div class="thumbnail">
 		<div class="panel">
@@ -34,6 +33,12 @@
 		</div>
 	</div>
 		
+  <div class="thumbnail">
+    	<div class="panel-body" style="height:50px" >
+    		<h3 class="name">{ROW.product_name}</h3>
+    	</div>
+	</div>
+
 	<div class="caption">
 			<div class="panel-footer">
 				<h3>{ROW.product_price} </h3>

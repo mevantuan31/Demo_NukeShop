@@ -15,54 +15,26 @@ if (!defined('NV_IS_MOD_CATEGORY')) {
 $page_title = $module_info['site_title'];
 $key_words = $module_info['keywords'];
 
-$array_data = []; 
 
 
 
-//phan trang
-$page_title = $lang_module['main'];
+$row_detail = [];
 
-$perpage = 20;
-$page = $nv_Request->get_int('page', 'get', 1);
+$id = $nv_Request->get_title('id', 'post, get', '');
 
-//sắp xếp + tìm kiếm
-$keyword = $nv_Request->get_title('keyword', 'get', '');
-$order_by = $nv_Request->get_title('order_by', 'get', '');
-$stype = $nv_Request->get_title('stype', 'get', '');
+$sql = "SELECT * FROM `nv4_product` WHERE id = " .$id; 
+$row_detail = $db->query($sql)->fetch();
 
-$db->sqlreset()
-    ->select('COUNT(*)')
-    ->from($db_config['prefix'] . '_' . 'product')
-    ->where('product_name LIKE ' . $db->quote('%' . $keyword . '%'));
-$sql = $db->sql();
-
-$total = $db->query($sql)->fetchColumn();
-
-if (!empty($order_by)) {
-    $db->select('*')
-        ->order($order_by . ' ' . $stype)
-        ->limit($perpage)
-        ->offset(($page - 1) * $perpage);
-} else {
-    $db->select('*')
-        ->order('weight ASC')
-        ->limit($perpage)
-        ->offset(($page - 1) * $perpage);
-
-}
-
-$sql = $db->sql();
-$result = $db->query($sql);
-while ($row = $result->fetch()) {
-    $array_data[$row['id']] = $row;
-}
+$sql = "SELECT category_name FROM `nv4_categories` WHERE id = " .$row_detail['category_id'];
+$row_cate = $db->query($sql)->fetch();
 
 
-//------------------
-// Viết code vào đây
-//------------------
 
-$contents = nv_theme_category_detail($array_data);
+
+
+$contents = nv_theme_category_detail($row_detail,$row_cate);
+
+
 
 include NV_ROOTDIR . '/includes/header.php';
 echo nv_site_theme($contents);
