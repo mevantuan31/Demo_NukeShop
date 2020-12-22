@@ -57,9 +57,16 @@ while ($row = $result->fetch()) {
     $array_data[$row['id']] = $row;
 }
 
+$sql = "SELECT id, category_name FROM `nv4_categories`";
+$row_cate = $db->query($sql)->fetchAll();
+/*echo "<pre>";
+print_r($row_cate);
+echo "</pre>";
+*/
+
 //------------------
 
-$contents = nv_theme_category_main($array_data);
+$contents = nv_theme_category_main($array_data, $row_cate, $perpage, $page, $total);
 
 include NV_ROOTDIR . '/includes/header.php';
 echo nv_site_theme($contents);

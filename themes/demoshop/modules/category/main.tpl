@@ -1,17 +1,12 @@
 <!-- BEGIN: main -->
 
 
-<div class="col-xs-24 col-sm-24 col-md-24 ">
+<div class="col-xs-5 col-sm-5 col-md-5 ">
 <div class="panel panel-default">
-	<!-- Default panel contents -->
-	<div class="panel-heading text-center"><h1> <i class="fa fa-briefcase"></i> - {LANG.category_id}</h1></div>
+	<div class="panel-heading text-center"><h1> <i class="fa fa-briefcase"></i> -Danh muc</h1></div>
     <!-- BEGIN: cate -->
     <table class="table">
-		<td>
-            <h3> <i class="fa fa-book"></i> - <a href ="{CATE.url_product}">{CATE.name} </a>
-            <!-- BEGIN: count --> ({COUNT.category_id}) <!-- END: count -->
-            </h3>
-           
+		<h3> <i class="fa fa-laptop"></i> - <a href ="{CATE.url_product}">{CATE.category_name} </a>
     </table>
     <!-- END: cate -->
 
@@ -19,7 +14,7 @@
 </div>
 
 
-
+<div class="col-xs-19 col-sm-19 col-md-19">
     <!-- BEGIN: loop -->
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 <div class="panel panel-default"  >
