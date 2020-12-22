@@ -1,40 +1,59 @@
 <!-- BEGIN: main -->
 
-<div class="table-responsive">
-    <table class="table table-striped table-bordered table-hover">
-        <tbody>
-          <div class="small-container single-product">
-            <div class="col-2">
-              <img src="{ROW.product_image}" alt="image" id="product_image"  />
-            </div>
-            <div class="col-2">
-              <p>{ROW.category_name}</p>
-              <h1 id="itemTitle">{ROW.product_name}</h1>
-              <h4 id="itemPrice">{ROW.product_price}</h4>
-              <input type="number" value="1" />
-              <a href="cart.html" class="btn">Add to cart</a>
-              <h1>Thông tin chi tiết sản phẩm</h1>
-              <h3>{ROW.product_desc}</h3>
-              <br />
-              <p id="description"></p>
-            </div>
-          </div>
-        </tbody>
+
+<div class="col-xs-5 col-sm-5 col-md-5 ">
+<div class="panel panel-default">
+    <!-- BEGIN: cate -->
+    <table class="table">
+		<td>
+            <h3> <i class="fa fa-book"></i> - <a href ="{CATE.url_product}">{CATE.name} </a>
+            <!-- BEGIN: count --> ({COUNT.category_id}) <!-- END: count -->
+            </h3>
+           
     </table>
+    <!-- END: cate -->
+
+</div>
+</div>
+
+
+    <!-- BEGIN: loop -->
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+<div class="panel panel-default"  >
+    <div class="thumbnail">
+    	<div class="panel-body" style="height:50px" >
+    		<h3 class="name">{ROW.product_name}</h3>
+    	</div>
+	</div>
+	
+	<div class="thumbnail">
+		<div class="panel">
+			<a href="{ROW.url_detail}" >
+				<img src="{ROW.product_image}" style="border: 1px solid red; height:300px">
+			</a>
+		</div>
+	</div>
+		
+	<div class="caption">
+			<div class="panel-footer">
+				<h3>{ROW.product_price} </h3>
+			</p></div>
+			<div class="text-center">
+				
+				<a href="" class="btn btn-danger" role="button" onclick="nv_add_to_cart({ROW.id}, 'add')"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+			</div>
+	</div>
+            
+		
+	
+	</div>
+		
+</div>
+    <!-- END: loop -->
+
     <!-- BEGIN: GENERATE_PAGE -->
     {GENERATE_PAGE} 
     <!-- END: GENERATE_PAGE -->
-<script src="index.js"></script>
-      <script src="products.js"></script>
-      <script type="text/javascript">
-        $(window).on('scroll', function() {
-          if ($(window).scrollTop()) {
-            $('nav').addClass('black');
-          } else {
-            $('nav').removeClass('black');
-          }
-        });
-      </script>
 
 </div>
 <!-- END: main -->
