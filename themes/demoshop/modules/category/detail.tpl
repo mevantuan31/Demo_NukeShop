@@ -5,38 +5,34 @@
 	</div>
 </div>
        <div class="container">
-	<div class="row">
+	<div class="row" >
 		<div>
-			<div class="col-xs-8 col-sm-8 col-md-10 text-center">		
+			<div class="col-xs-8 col-sm-8 col-md-11 text-center">		
 				<img src="{ROWDETAIL.product_image}" alt="" class="avt" style="width:400px; height: 400px; ">
 			</div>
-			<div class="col-xs-8 col-sm-8 col-md-8 ">
-					<h1> {ROWDETAIL.product_name}</h1>
+			<div class="col-xs-8 col-sm-8 col-md-13 " >
+					<h1>{ROWDETAIL.product_name}</h1>
 				<br>
 
-				<h2><p>Danh mục: {ROWCATE.category_name}</p></h2>
-				<div class="container" >
-					
-
-				
-				<h2>
-					   {ROWDETAIL.product_price},000 VNĐ
-					<p></p>
-				</h2>
-				
+				<h2><p> Danh mục: {ROWCATE.category_name}</p></h2>
+				<div class="container">
+					<h2>
+						<i class="fa fa-bolt "></i> Giá bán: {ROWDETAIL.product_price},000 VNĐ
+						<p></p>
+					</h2>
 				</div>
 				<p>
 					<a href="#" class="btn btn-danger" onclick="nv_add_to_cart({ROWDETAIL.id}, 'add')"><i class="fa fa-shopping-cart"></i> Add to cart</a>
 				</p>
                 <br>
                 <p>{ROWDETAIL.product_desc}</p>
-			</div>
-			<div class="col-md-6">
+				<p>
 				<h2><p>Chính sách bảo hành</p></h2>
 				<h3> <i class="fa fa-eercast"></i>  Bảo hành chính hãng 3 năm</h3>
 				<h3> <i class="fa fa-eercast"></i>  Đổi mới trong 15 ngày đầu tiên</h3>
 				<h3> <i class="fa fa-eercast"></i>  1 đổi 1 trong 1 tháng nếu có lỗi của nhà sản suất</h3>
-				</div>
+			</div>
+			
 			</div>	
 		</div>
     </div>

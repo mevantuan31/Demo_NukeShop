@@ -7,9 +7,9 @@
 </div>
 
 
-<div class="col-xs-5 col-sm-5 col-md-5 ">
+<div class="col-xs-5 col-sm-5 col-md-5">
 <div class="panel panel-default">
-	<div class="panel-heading text-center"><h1> <i class="fa fa-briefcase"></i> -Danh muc</h1></div>
+	<div class="panel-heading text-center"><h1> <i class="fa fa-folder-o"></i> Danh mục sản phẩm</h1></div>
 	<p>
     <!-- BEGIN: cate -->
     <table class="table">
@@ -37,14 +37,14 @@
 	</div>
 		
   <div class="thumbnail">
-    	<div class="panel-body" style="height:50px" >
+    	<div class="panel-body" style="height: 35px" >
     		<h3 class="name">{ROW.product_name}</h3>
     	</div>
 	</div>
 
 	<div class="caption">
 			<div class="panel-footer">
-				<h3>{ROW.product_price} </h3>
+				<h3>{ROW.product_price},000 VNĐ </h3>
 			</p></div>
 			</a>
 			<div class="text-center">
