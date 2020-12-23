@@ -16,13 +16,13 @@ $page_title = $module_info['site_title'];
 $key_words = $module_info['keywords'];
 
 $array_data = [];
-
+ 
 //------------------
 
 //phan trang
 $page_title = $lang_module['main'];
 
-$perpage = 20;
+$perpage = 6;
 $page = $nv_Request->get_int('page', 'get', 1);
 
 //sắp xếp + tìm kiếm
