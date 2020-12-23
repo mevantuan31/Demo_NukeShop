@@ -191,3 +191,46 @@ $xtpl->parse('main.GENERATE_PAGE');
 }
 
 
+function nv_theme_category_cart($array_data, $result, $error, $alert, $post)
+{
+    global $module_info, $lang_module, $lang_global, $op, $module_name,  $key_cart;
+
+    $xtpl = new XTemplate($op . '.tpl', NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $module_info['module_theme']);
+    $xtpl->assign('LANG', $lang_module);
+    $xtpl->assign('GLANG', $lang_global);
+    $xtpl->assign('OP', $op);
+    $xtpl->assign('MODULE_NAME', $module_name);
+    $xtpl->assign('POST', $post);
+    //in ra sp trong giỏ hàng
+    foreach ($_SESSION['cart_item'] as $key_cart => $val_cart_item)
+    {
+        $val_cart_item['format_price'] = number_format($val_cart_item['price']);
+        $total_bill += $val_cart_item['price'];
+
+        $xtpl->assign('VAL_CART_ITEM', $val_cart_item);
+        $xtpl->parse('main.dataLoop');
+    }
+    //in tổng bill
+    $xtpl->assign('TOTAL_BILL', number_format($total_bill));
+
+    
+    /* Hiển thị err */
+    $xtpl->assign('ERROR', implode('<br>', $error));
+
+    if (!empty($error)) {
+        //hiển thị khối main.error
+        $xtpl->parse('main.error');
+    }
+    /* end err */
+
+    /* Hiển thị alert */
+    if (!empty($alert)) {
+        $xtpl->assign('ALERT', $alert);
+        //hiển thị khối main.alert
+        $xtpl->parse('main.alert');
+    }
+    /* end alert */
+    
+    $xtpl->parse('main');
+    return $xtpl->text('main');
+}

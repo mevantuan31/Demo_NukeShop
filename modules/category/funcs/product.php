@@ -17,16 +17,16 @@ $key_words = $module_info['keywords'];
 
 
 
+$row_cate = [];
+$row_cate=[];
 
-$row_detail = [];
+$id = $nv_Request->get_int('id', 'post, get', '');
 
-$id = $nv_Request->get_title('id', 'post, get', '');
+$sql = "SELECT id, category_name FROM `nv4_categories`";
+$row_cate = $db->query($sql)->fetchAll();
 
-$sql = "SELECT * FROM `nv4_product` WHERE id = " .$id; 
-$row_detail = $db->query($sql)->fetch();
-
-$sql = "SELECT category_name FROM `nv4_categories` WHERE id = " .$row_detail['category_id'];
-$row_cate = $db->query($sql)->fetch();
+$sql = "SELECT * FROM nv4_product where category_id = " .$id;
+$row_product = $db->query($sql)->fetchAll();
 
 
 
