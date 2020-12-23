@@ -31,7 +31,7 @@
 	<div class="thumbnail">
 		<div class="panel">
 			
-				<img src="{ROW.product_image}" style="border: 1px solid red; height:300px">
+				<img src="{ROW.product_image}" style="border: 1px solid white; height:300px; width: 390px">
 			
 		</div>
 	</div>
