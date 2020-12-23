@@ -25,7 +25,7 @@ function nv_theme_category_main($array_data)
     $xtpl = new XTemplate($op . '.tpl', NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $module_info['module_theme']);
     $xtpl->assign('LANG', $lang_module);
     $xtpl->assign('GLANG', $lang_global);
-
+    
     //------------------
     
 
@@ -195,17 +195,35 @@ $xtpl->parse('main.GENERATE_PAGE');
  * @param mixed $array_data
  * @return
  */
-function nv_theme_category_product($row_detail,$row_cate)
+function nv_theme_category_product($row_cate,$row_product)
 {
-    global $module_info, $lang_module, $lang_global, $op, $module_name;
-
+    global $module_info, $lang_module, $lang_global,$module_name, $op;
+    
     $xtpl = new XTemplate($op . '.tpl', NV_ROOTDIR . '/themes/' . $module_info['template'] . '/modules/' . $module_info['module_theme']);
     $xtpl->assign('LANG', $lang_module);
     $xtpl->assign('GLANG', $lang_global);
     
+    if (!empty($row_cate)) {
+        foreach ($row_cate as $cate){
+            $cate['url_product'] = NV_BASE_SITEURL .'index.php?'. NV_LANG_VARIABLE .'='. NV_LANG_DATA .'&amp;'. NV_NAME_VARIABLE .'='. $module_name .'&amp;'. NV_OP_VARIABLE .'=product&amp;id='. $cate['id'];
+            $xtpl->assign('CATE', $cate);
+            $xtpl->parse('main.cate');
+        }
+    }
+    
+    if (!empty($row_product)) {
+        foreach ($row_product as $product){
+            $product['product_image'] = NV_BASE_SITEURL . NV_UPLOADS_DIR . '/'. $module_name . '/' . $product['product_image'];
+            $product['url_detail'] = NV_BASE_SITEURL .'index.php?'. NV_LANG_VARIABLE .'='. NV_LANG_DATA .'&amp;'. NV_NAME_VARIABLE .'='. $module_name .'&amp;'. NV_OP_VARIABLE .'=detail&amp;id='. $product['id'];
+            $xtpl->assign('PRODUCT', $product);
+            $xtpl->parse('main.product');
+        }
+    }
+    
     //------------------
     // Viết code vào đây
     //------------------
+    
 
     $xtpl->parse('main');
     return $xtpl->text('main');

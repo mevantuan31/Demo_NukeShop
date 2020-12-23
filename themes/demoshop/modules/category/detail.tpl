@@ -1,19 +1,27 @@
 <!-- BEGIN: main -->
-
+<div class="row">
+	<div class="col-md-24">
+		<div id="cp_widget_f084c050-4ced-461a-a3b7-e0a9ff73da17">...</div><script type="text/javascript"> var cpo = []; cpo["_object"] ="cp_widget_f084c050-4ced-461a-a3b7-e0a9ff73da17"; cpo["_fid"] = "AsCAVve1qj-V"; var _cpmp = _cpmp || []; _cpmp.push(cpo); (function() { var cp = document.createElement("script"); cp.type = "text/javascript"; cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js"; var c = document.getElementsByTagName("script")[0]; c.parentNode.insertBefore(cp, c); })(); </script>
+	</div>
+</div>
        <div class="container">
 	<div class="row">
 		<div>
-			<div class="col-xs-8 col-sm-8 col-md-9 text-center">		
-				<img src="{ROWDETAIL.product_image}" alt="" class="avt" style="width:400px; height: 400px; border: red 2px solid ">
+			<div class="col-xs-8 col-sm-8 col-md-10 text-center">		
+				<img src="{ROWDETAIL.product_image}" alt="" class="avt" style="width:400px; height: 400px; ">
 			</div>
 			<div class="col-xs-8 col-sm-8 col-md-8 ">
-				<h1> {ROWDETAIL.product_name}</h1>
+					<h1> {ROWDETAIL.product_name}</h1>
 				<br>
-				<div class="container">
-					<h1><p>Danh mục: {ROWCATE.category_name}</p></h1>
-				<h2>
-					   {ROWDETAIL.product_price} VNĐ
+
+				<h2><p>Danh mục: {ROWCATE.category_name}</p></h2>
+				<div class="container" >
 					
+
+				
+				<h2>
+					   {ROWDETAIL.product_price},000 VNĐ
+					<p></p>
 				</h2>
 				
 				</div>
@@ -23,8 +31,14 @@
                 <br>
                 <p>{ROWDETAIL.product_desc}</p>
 			</div>
-		</div>	
-	</div>
+			<div class="col-md-6">
+				<h2><p>Chính sách bảo hành</p></h2>
+				<h3> <i class="fa fa-eercast"></i>  Bảo hành chính hãng 3 năm</h3>
+				<h3> <i class="fa fa-eercast"></i>  Đổi mới trong 15 ngày đầu tiên</h3>
+				<h3> <i class="fa fa-eercast"></i>  1 đổi 1 trong 1 tháng nếu có lỗi của nhà sản suất</h3>
+				</div>
+			</div>	
+		</div>
     </div>
 </div>
 

@@ -30,6 +30,7 @@ $keyword = $nv_Request->get_title('keyword', 'get', '');
 $order_by = $nv_Request->get_title('order_by', 'get', '');
 $stype = $nv_Request->get_title('stype', 'get', '');
 
+
 $db->sqlreset()
     ->select('COUNT(*)')
     ->from($db_config['prefix'] . '_' . 'product')
